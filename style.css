@@ -1,0 +1,16 @@
+#button {
+    background-color: white;
+}
+
+#output {
+    width: 450px;
+    height: 250px;
+    max-width: 450px;
+    max-height: 250px;;
+    text-align: left;
+    display: table-cell;
+    vertical-align: top;
+    line-height: 1;
+    word-wrap: break-word;
+    font-family: monospace;
+}
