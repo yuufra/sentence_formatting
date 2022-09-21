@@ -2,15 +2,42 @@
     background-color: white;
 }
 
+#button:active {
+    background-color: whitesmoke;
+}
+
 #output {
     width: 450px;
-    height: 250px;
+    height: 240px;
     max-width: 450px;
-    max-height: 250px;;
+    max-height: 240px;
     text-align: left;
     display: table-cell;
     vertical-align: top;
     line-height: 1;
     word-wrap: break-word;
     font-family: monospace;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 18;
+    overflow: hidden;
+}
+
+#copied {
+    opacity: 0;
+}
+
+.show {
+    animation: fadeout-anim 3s ease-in ;
+}
+
+@keyframes fadeout-anim {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
 }
